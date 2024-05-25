@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 1</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+
+<body>
+    
+<main>
+
+    <header>
+        <img src="img/logo-amarillo2.png" alt="logo" height="70px">
+    </header>
+    <h1>3.	Diseñar un programa que permita ingresar la edad de una cierta persona</h1>
+    <div id="solucion">
+
+        <script>
+            //Declaracion de variables//
+            var edad,resultado
+        
+    
+            //Fase de lectura / estructura//
+            edad = parseInt(prompt("Ingrese su edad"));
+            
+
+            //Fase procesamientos de datos//
+            if (edad <= 10) {
+                resultado="Niño";
+            } else {
+                if (edad <= 15) {
+                    resultado="Puber"
+                } else {
+                    if (edad <= 19) {
+                        resultado="Adolescente"
+                    } else {
+                        if (edad <= 26) {
+                            resultado="joven"
+                        } else {
+                            if (edad <= 65) {
+                                resultado="Adulto"
+                            } else {
+                                resultado="Anciano"
+                            }
+                        }
+                    }
+                }
+            }
+        
+           
+            //Fase de salida//
+            document.write("========CATEGORIA POR EDAD========"+"<br>"+"<br>")
+            document.write("La edad de usted es: "  +edad+"<br>"+"<br>");
+            document.write("Segun la categoria usted es: "  +resultado+"<br>");
+
+
+        </script>
+    </div>
+   
+</main>
+
+
+</body>
+</html>
